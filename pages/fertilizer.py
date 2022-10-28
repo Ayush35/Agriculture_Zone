@@ -1,6 +1,7 @@
 import streamlit as st
 from fertilizer import fertilizer_dic
 import pandas as pd
+import csv
 
 st.title("Agriculture Zone")
 st.sidebar.title("$Agriculture Zone$")
@@ -45,6 +46,12 @@ with st.form('Fertilizer_Choice'):
 
 
 df = pd.read_csv(r'..\Data\fertilizer.csv')
+
+
+with open('fertilizer.csv', mode ='r')as file:
+  csvFile = csv.reader(file)
+
+df = pd.read_csv(csvFile)
 
 nr = df[df['Crop'] == crop_name]['N'].iloc[0]
 pr = df[df['Crop'] == crop_name]['P'].iloc[0]
