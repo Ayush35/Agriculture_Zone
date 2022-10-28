@@ -44,7 +44,7 @@ with st.form('Fertilizer_Choice'):
             "Please Enter The value of Pottasium in your soil", value=50)
     submit2 = st.form_submit_button('Submit')
 
-with open('fertilizer.csv', mode ='r')as file:
+with open(r'Data\fertilizer.csv', mode ='r')as file:
   csvFile = csv.reader(file)
 
 df = pd.read_csv(csvFile)
