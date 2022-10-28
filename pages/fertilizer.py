@@ -47,7 +47,7 @@ import csv
 import pandas as pd
    
 # open the csv file
-with open(r"..\Data\fertilizer.csv") as csv_file: 
+with open(r"fertilizer.csv") as csv_file: 
     csv_reader = csv.reader(csv_file)
     # now we can use this csv files into the pandas
     df = pd.DataFrame([csv_reader], index=None)
