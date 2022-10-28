@@ -23,6 +23,6 @@
 ##Execution
 to Run the Code , 
 ```
-streamlit run streamlit run .\HOME.py
+streamlit run .\HOME.py
 
 ```
