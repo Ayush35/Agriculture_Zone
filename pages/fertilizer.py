@@ -43,6 +43,7 @@ with st.form('Fertilizer_Choice'):
         Pottasium = slider_val = st.slider(
             "Please Enter The value of Pottasium in your soil", value=50)
     submit2 = st.form_submit_button('Submit')
+
 import csv
 import pandas as pd
    
