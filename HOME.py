@@ -142,17 +142,3 @@ with col3:
         page_name = 'crop disease'
 if page_name !='':
     switch_page(page_name)
-# st.button("Crop")
-# st.button("Fertilizer")
-# st.button("Crop Disease")Our Services
-
-# Crop
-# Recommendation about the type of crops to be cultivated which is best suited for the respective conditions
-
-
-# Fertilizer
-# Recommendation about the type of fertilizer best suited for the particular soil and the recommended crop
-
-
-# Crop Disease
-# Predicting the name and causes of crop disease and suggestions to cure it
