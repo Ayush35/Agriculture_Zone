@@ -44,7 +44,7 @@ with st.form('Fertilizer_Choice'):
     submit2 = st.form_submit_button('Submit')
 
 
-df = pd.read_csv('../Data/fertilizer.csv')
+df = pd.read_csv('fertilizer.csv')
 
 nr = df[df['Crop'] == crop_name]['N'].iloc[0]
 pr = df[df['Crop'] == crop_name]['P'].iloc[0]
