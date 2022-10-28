@@ -8,7 +8,7 @@ crop_recommendation_model = pickle.load(
     open(crop_recommendation_model_path, 'rb'))
 
 st.title("Agriculture Zone")
-
+st.sidebar.title("$Agriculture Zone$")
 st.header("Find out the most suitable crop to grow in your farm")
 
 def weath_cordi(city_name):
@@ -120,6 +120,10 @@ if weather_fetch(city) != None:
     my_prediction = crop_recommendation_model.predict(data)
     final_prediction = my_prediction[0]
     st.title("You should grow " + final_prediction.upper() +" in your farm" )
-
+    st.sidebar.markdown("$Recommend : " + final_prediction.capitalize() + "$")
 else:
     st.title("Results Unable to Fetch , Please Try Againi in Sometime" )
+st.sidebar.subheader("About ")
+st.sidebar.markdown("Agriculture Zone is a Web Application   \nWhich has Three Purposes   \n 1. Recommend Crop to Farmers based on Place and Soil Minerals ")
+st.sidebar.markdown("2. Recommend Fertilizer to farmers according to crop and Soil Minerals")
+st.sidebar.markdown("3. Take crop image as an input and describe disease if exist and it's Solutions")

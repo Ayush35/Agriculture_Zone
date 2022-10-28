@@ -3,7 +3,7 @@ from fertilizer import fertilizer_dic
 import pandas as pd
 
 st.title("Agriculture Zone")
-
+st.sidebar.title("$Agriculture Zone$")
 st.subheader(
     "Enter Following Detail to choose the fertilizer and take the Informed Decision")
 
@@ -76,3 +76,9 @@ else:
 
 if submit2:
     st.subheader(str(fertilizer_dic[key]))
+
+
+st.sidebar.subheader("About ")
+st.sidebar.markdown("Agriculture Zone is a Web Application   \nWhich has Three Purposes   \n 1. Recommend Crop to Farmers based on Place and Soil Minerals ")
+st.sidebar.markdown("2. Recommend Fertilizer to farmers according to crop and Soil Minerals")
+st.sidebar.markdown("3. Take crop image as an input and describe disease if exist and it's Solutions")
