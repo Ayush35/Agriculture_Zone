@@ -5,7 +5,6 @@ import pandas as pd
 # from utils.disease import disease_dic
 # from utils.fertilizer import fertilizer_dic
 import requests
-# import config 
 import pickle
 import io
 import torch
