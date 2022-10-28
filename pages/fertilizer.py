@@ -43,17 +43,20 @@ with st.form('Fertilizer_Choice'):
         Pottasium = slider_val = st.slider(
             "Please Enter The value of Pottasium in your soil", value=50)
     submit2 = st.form_submit_button('Submit')
-
-with open(r'Data\fertilizer.csv', mode ='r')as file:
-  csvFile = csv.reader(file)
-
-df = pd.read_csv(csvFile)
-
+import csv
+import pandas as pd
+   
+# open the csv file
+with open(r"..\Data\fertilizer.csv") as csv_file: 
+    csv_reader = csv.reader(csv_file)
+    # now we can use this csv files into the pandas
+    df = pd.DataFrame([csv_reader], index=None)
+    df.head()
 nr = df[df['Crop'] == crop_name]['N'].iloc[0]
 pr = df[df['Crop'] == crop_name]['P'].iloc[0]
 kr = df[df['Crop'] == crop_name]['K'].iloc[0]
 
-n = nr-nitrogen
+n = nr-nitrog
 p = pr-phosphorus
 k = kr-Pottasium
 
