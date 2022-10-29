@@ -1,4 +1,6 @@
 import streamlit as st
+from streamlit import _RerunData, _RerunException
+from streamlit.source_util import get_pages
 import numpy as np
 import pandas as pd
 import requests
@@ -9,8 +11,6 @@ from torchvision import transforms
 from PIL import Image
 import sys
 from model import ResNet9
-from streamlit import _RerunData, _RerunException
-from streamlit.source_util import get_pages
 import requests
 
 sys.path.append('/home/user/Documents/imgmlreport/inception/models/research/object_detection')
@@ -84,6 +84,7 @@ def switch_page(page_name: str):
     page_names = [standardize_name(config["page_name"]) for config in pages.values()]
 
     raise ValueError(f"Could not find page {page_name}. Must be one of {page_names}")
+
 def weather_fetch(city_name):
     api_key = config.weather_api_key
     base_url = "http://api.openweathermap.org/data/2.5/weather?"

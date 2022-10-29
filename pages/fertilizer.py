@@ -57,7 +57,7 @@ nr = df[df['Crop'] == crop_name]['N'].iloc[0]
 pr = df[df['Crop'] == crop_name]['P'].iloc[0]
 kr = df[df['Crop'] == crop_name]['K'].iloc[0]
 
-n = nr-nitrog
+n = nr-nitrogen
 p = pr-phosphorus
 k = kr-Pottasium
 
