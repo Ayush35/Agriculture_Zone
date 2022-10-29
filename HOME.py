@@ -1,9 +1,6 @@
-#Import Libraries 
 import streamlit as st
 import numpy as np
 import pandas as pd
-# from utils.disease import disease_dic
-# from utils.fertilizer import fertilizer_dic
 import requests
 import pickle
 import io
@@ -11,6 +8,9 @@ import torch
 from torchvision import transforms
 from PIL import Image
 import sys
+from streamlit import _RerunData, _RerunException
+from streamlit.source_util import get_pages
+
 sys.path.append('/home/user/Documents/imgmlreport/inception/models/research/object_detection')
 from model import ResNet9   
 
@@ -63,8 +63,6 @@ disease_model.load_state_dict(torch.load(
 disease_model.eval()
 
 def switch_page(page_name: str):
-    from streamlit import _RerunData, _RerunException
-    from streamlit.source_util import get_pages
 
     def standardize_name(name: str) -> str:
         return name.lower().replace("_", " ")
