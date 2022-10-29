@@ -2,7 +2,8 @@ import streamlit as st
 import pickle
 import requests
 import numpy as np
-crop_recommendation_model_path = 'models/RandomForest.pkl'
+
+crop_recommendation_model_path = 'RandomForest.pkl'
 crop_recommendation_model = pickle.load(open(crop_recommendation_model_path, 'rb'))
 
 st.title("Agriculture Zone")

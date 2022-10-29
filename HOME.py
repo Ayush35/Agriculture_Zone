@@ -8,11 +8,12 @@ import torch
 from torchvision import transforms
 from PIL import Image
 import sys
+from model import ResNet9
 from streamlit import _RerunData, _RerunException
 from streamlit.source_util import get_pages
+import requests
 
 sys.path.append('/home/user/Documents/imgmlreport/inception/models/research/object_detection')
-from model import ResNet9   
 
 st.title('Agriculture Zone')
 
