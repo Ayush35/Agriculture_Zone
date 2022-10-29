@@ -26,3 +26,8 @@ to Run the Code ,
 streamlit run streamlit run .\HOME.py
 
 ```
+
+##PURPOSE
+1. Recommend Crop to Farmers based on Place and Soil Minerals
+2. Recommend Fertilizer to farmers according to crop and Soil Minerals
+3. Take crop image as an input and describe disease if exist and it's Solutions
