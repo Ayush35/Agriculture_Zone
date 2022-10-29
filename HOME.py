@@ -7,7 +7,7 @@ import pandas as pd
 import requests
 import pickle
 import io
-# import torch
+import torch
 from torchvision import transforms
 from PIL import Image
 import sys
