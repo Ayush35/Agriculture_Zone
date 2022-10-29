@@ -12,6 +12,7 @@ from PIL import Image
 import sys
 from model import ResNet9
 import requests
+import sklearn
 
 sys.path.append('/home/user/Documents/imgmlreport/inception/models/research/object_detection')
 

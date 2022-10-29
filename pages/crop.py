@@ -2,7 +2,6 @@ import streamlit as st
 import pickle
 import requests
 import numpy as np
-
 st.title("Agriculture Zone")
 st.sidebar.title("$Agriculture Zone$")
 st.header("Find out the most suitable crop to grow in your farm")
