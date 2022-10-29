@@ -20,14 +20,14 @@ Check out the Deployed Web App - [Here](https://ayush35-agriculture-zone-home-4d
 7) torch==1.12.1
 8) torchvision==0.13.1
 ```
-##Execution
+## Execution
 to Run the Code , 
 ```
 streamlit run streamlit run .\HOME.py
 
 ```
 
-##PURPOSE
+## PURPOSE
 1. Recommend Crop to Farmers based on Place and Soil Minerals
 2. Recommend Fertilizer to farmers according to crop and Soil Minerals
 3. Take crop image as an input and describe disease if exist and it's Solutions
