@@ -3,12 +3,11 @@ import pickle
 import requests
 import numpy as np
 
-crop_recommendation_model_path = 'RandomForest.pkl'
-crop_recommendation_model = pickle.load(open(crop_recommendation_model_path, 'rb'))
-
 st.title("Agriculture Zone")
 st.sidebar.title("$Agriculture Zone$")
 st.header("Find out the most suitable crop to grow in your farm")
+
+crop_recommendation_model = pickle.load(open('RandomForest.pkl', 'rb'))
 
 def weath_cordi(city_name):
     user_api = '7c2bf71bd0d17ce3ab49ab5407df72ab'
