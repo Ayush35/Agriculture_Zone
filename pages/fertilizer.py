@@ -44,15 +44,8 @@ with st.form('Fertilizer_Choice'):
             "Please Enter The value of Pottasium in your soil", value=50)
     submit2 = st.form_submit_button('Submit')
 
-import csv
-import pandas as pd
-   
-# open the csv file
-with open(r"fertilizer.csv") as csv_file: 
-    csv_reader = csv.reader(csv_file)
-    # now we can use this csv files into the pandas
-    df = pd.DataFrame([csv_reader], index=None)
-    df.head()
+df = pd.read_csv('fertilizer.csv')
+
 nr = df[df['Crop'] == crop_name]['N'].iloc[0]
 pr = df[df['Crop'] == crop_name]['P'].iloc[0]
 kr = df[df['Crop'] == crop_name]['K'].iloc[0]
